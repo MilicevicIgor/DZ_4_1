@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Zad04</title>
+</head>
+<body>
+ <script type="text/javascript">
+ 
+let polje = new Array(1, 2, 3, 4, 7, 8, 5, 6, 9, 55, 12, 4, 85);
+
+console.log("Dužina polja:", polje.length);
+
+let sortiranoNajvece = polje.slice().sort((a, b) => b - a);
+console.log("Sortirano od najvećeg ka najmanjem:", sortiranoNajvece);
+
+let sortiranoNajmanje = polje.slice().sort((a, b) => a - b);
+console.log("Sortirano od najmanjeg ka najvećem:", sortiranoNajmanje);
+
+sortiranoNajmanje.pop();
+console.log("Sortirano polje bez zadnjeg člana:", sortiranoNajmanje);
+
+sortiranoNajmanje.push(19, 22);
+console.log("Polje s dodanim članovima:", sortiranoNajmanje);
+
+let polje2 = ["Banana", "Orange", "Apple", "Mango"];
+
+let polje_final = polje.concat(polje2);
+console.log("Spojena polja:", polje_final);
+
+
+ </script>
+</body>
+</html>

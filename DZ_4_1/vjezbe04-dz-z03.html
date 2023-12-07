@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Zad03</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+function isProstBroj(num) {
+      if (num < 2) {
+        return false;
+      }
+      for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    for (let i = 1; i <= 1000; i++) {
+      if (isProstBroj(i)) {
+        console.log(i); // Ispisuje u konzoli
+        document.write(i + "<br>"); // Ispisuje u HTML-u
+      }
+    }
+ </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Zad10</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+function PetRandomBrojeva(broj1, broj2) {
+  if (broj1 > broj2) {
+    const temp = broj1;
+    broj1 = broj2;
+    broj2 = temp;
+  }
+
+  for (let i = 0; i < 5; i++) {
+    const randomBroj = Math.floor(Math.random() * (broj2 - broj1 + 1)) + broj1;
+    console.log(randomBroj);
+  }
+}
+PetRandomBrojeva(1, 10); 
+ </script>
+</body>
+</html>

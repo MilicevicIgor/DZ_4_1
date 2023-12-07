@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Zad05</title>
+</head>
+<body>
+ <script type="text/javascript">
+ 
+let Osoba1 = {
+  firstName: "Marko",
+  lastName: "Maric",
+  age: 40,
+  eyeColor: "black"
+};
+
+let Osoba2 = {
+  firstName: "Igor",
+  lastName: "Milicevic",
+  age: 23,
+  eyeColor: "brown"
+};
+
+let Osoba3 = {
+  firstName: "Mate",
+  lastName: "Matic",
+  age: 28,
+  eyeColor: "green"
+};
+
+
+let osobe = [Osoba1, Osoba2, Osoba3];
+
+for (let i = 0; i < osobe.length; i++) {
+  console.log("Indeks:", i);
+  console.log("Ime:", osobe[i].firstName);
+  console.log("Prezime:", osobe[i].lastName);
+  console.log("Dob:", osobe[i].age);
+  console.log("Boja očiju:", osobe[i].eyeColor);
+
+}
+
+ </script>
+</body>
+</html>
